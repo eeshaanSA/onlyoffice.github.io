@@ -1,0 +1,10 @@
+{
+    "Error": "Erreur",
+    "Enter the ComboBox name:": "Entrez le nom de la ComboBox :",
+    "Select or drop a file here": "Sélectionnez ou déposez un fichier ici",
+    "Add data from file": "Ajouter des données à partir d'un fichier",
+    "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "Vous n'avez pas de ComboBox dans votre document. Ce plugin nécessite au moins un ComboBox pour fonctionner.",
+    "Enter the name(default key) of the ComboBox" : "Entrez le nom (clé par défaut) de la ComboBox",
+    "Please deselect elements or text before using this plugin for optimal performance." : "Veuillez désélectionner des éléments ou du texte avant d'utiliser ce plugin pour des performances optimales.",
+    "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key." : "Aucune des ComboBox du document ne correspond à la clé que vous avez saisie. Veuillez vérifier votre document ou réessayer avec une clé différente." 
+}

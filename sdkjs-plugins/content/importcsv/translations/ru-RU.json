@@ -1,0 +1,11 @@
+{
+    "Error": "ошибка",
+    "Enter the ComboBox name:": "Введите имя ComboBox:",
+    "Select or drop a file here": "Выберите или перетащите сюда файл",
+    "Add data from file": "Добавить данные из файла",
+    "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "В вашем документе нет полей со списком. Для работы этого плагина требуется хотя бы один ComboBox.",
+    "Enter the name(default key) of the ComboBox" : "Введите имя (ключ по умолчанию) ComboBox.",
+    "Please deselect elements or text before using this plugin for optimal performance." : "Пожалуйста, отмените выбор элементов или текста перед использованием этого плагина для оптимальной производительности.",
+    "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key." : "Ни один из полей со списком в документе не соответствует введенному вами ключу. Пожалуйста, проверьте свой документ или повторите попытку, используя другой ключ."
+}
+

@@ -1,0 +1,88 @@
+{
+    "name" : "Import data to ComboBox",
+	"nameLocale": {
+		"ru": "Импортируйте данные из файла CSV в ComboBox.",
+		"es": "Importar datos desde un archivo CSV a ComboBox",
+		"de": "Importieren Sie Daten aus einer CSV-Datei in die ComboBox",
+		"br": "Importar dados do arquivo CSV para o ComboBox"
+	},
+    "guid" : "asc.{SDF5TF32-45TG-345R-BGTR-HTRS34FG1FGB}",
+
+    "variations" : [
+        {
+            "description" : "Effortlessly populate data from a CSV file into your ComboBox with this plugin.",
+			"descriptionLocale": {
+				"ru": "С помощью этого плагина вы можете легко заполнять данные из файла CSV в свой ComboBox.",
+				"fr": "Remplissez sans effort les données d'un fichier CSV dans votre ComboBox avec ce plugin.",
+				"es": "Complete sin esfuerzo datos desde un archivo CSV en su ComboBox con este complemento.",
+				"de": "Füllen Sie mit diesem Plugin mühelos Daten aus einer CSV-Datei in Ihre ComboBox ein.",
+				"br": "Preencha facilmente dados de um arquivo CSV em seu ComboBox com este plugin."
+			},
+            "url"         : "index.html",
+            "icons": [ "resources/light/icon.png", "resources/light/icon@2x.png" ],
+			"icons2": [
+				{
+					"style" : "light",
+					
+					"100%": {
+						"normal": "resources/light/icon.png"
+					},
+					"125%": {
+						"normal": "resources/light/icon@1.25x.png"
+					},
+					"150%": {
+						"normal": "resources/light/icon@1.5x.png"
+					},
+					"175%": {
+						"normal": "resources/light/icon@1.75x.png"
+					},
+					"200%": {
+						"normal": "resources/light/icon@2x.png"
+					}
+				},
+				{
+					"style" : "dark",
+					
+					"100%": {
+						"normal": "resources/dark/icon.png"
+					},
+					"125%": {
+						"normal": "resources/dark/icon@1.25x.png"
+					},
+					"150%": {
+						"normal": "resources/dark/icon@1.5x.png"
+					},
+					"175%": {
+						"normal": "resources/dark/icon@1.75x.png"
+					},
+					"200%": {
+						"normal": "resources/dark/icon@2x.png"
+					}
+				}
+			],
+            "isViewer"        : false,
+            "EditorsSupport"  : ["word"],
+
+            "isVisual"        : true,
+            "isModal"         : false,
+            "isInsideMode"    : true,
+
+            "initDataType"    : "",
+            "initData"        : "",
+
+            "isUpdateOleOnResize" : false,
+			"store": {
+				"background": {
+					"light": "#F0F0F0",
+					"dark": "#333333"
+				},				
+				
+				"icons": {
+					"light": "resources/store/icons",
+					"dark": "resources/store/icons"
+				},
+				"categories": ["specAbilities", "work"]
+			}            
+        }
+    ]
+}

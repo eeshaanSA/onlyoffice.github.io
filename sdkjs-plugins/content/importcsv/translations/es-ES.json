@@ -1,0 +1,10 @@
+{
+    "Error": "Error",
+    "Enter the ComboBox name:": "Ingrese el nombre del cuadro combinado:",
+    "Select or drop a file here": "Seleccione o suelte un archivo aquí",
+    "Add data from file": "Agregar datos del archivo",
+    "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "No tiene cuadros combinados en su documento. Este complemento requiere al menos un ComboBox para funcionar.",
+    "Enter the name(default key) of the ComboBox" : "Ingrese el nombre (clave predeterminada) del ComboBox",
+    "Please deselect elements or text before using this plugin for optimal performance." : "Anule la selección de elementos o texto antes de utilizar este complemento para obtener un rendimiento óptimo.",
+    "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key." : "Ninguno de los ComboBoxes del documento coincide con la clave que ingresó. Por favor revise su documento o inténtelo nuevamente con una clave diferente."
+}
