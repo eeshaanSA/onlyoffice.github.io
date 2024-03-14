@@ -1,10 +1,11 @@
 {
     "name" : "Import data to ComboBox",
 	"nameLocale": {
-		"ru": "Импортируйте данные из файла CSV в ComboBox.",
-		"es": "Importar datos desde un archivo CSV a ComboBox",
-		"de": "Importieren Sie Daten aus einer CSV-Datei in die ComboBox",
-		"br": "Importar dados do arquivo CSV para o ComboBox"
+		"ru": "Импортировать данные в ComboBox",
+		"fr":"Importer des données dans ComboBox",
+		"es": "Importar datos a ComboBox",
+		"de": "Daten in ComboBox importieren",
+		"br": "Importar dados para ComboBox"
 	},
     "guid" : "asc.{SDF5TF32-45TG-345R-BGTR-HTRS34FG1FGB}",
 
