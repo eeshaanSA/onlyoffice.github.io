@@ -93,13 +93,9 @@
     .custom-file-input {
       position: relative;
       display: inline-block;
-      border: 2px dashed #888; /* Monochrome border color */
-      padding: 20px;
-      border-radius: 5px;
-      background-color: #f0f0f0; /* Light background color */
     }
 
-    .input-hidden {
+    .hidden {
       display: none;
     }
 
@@ -107,25 +103,23 @@
       cursor: pointer;
       display: inline-block;
       padding: 10px 15px;
-      background-color: #333; /* Dark monochrome color */
+      background-color: #333;
       color: #fff;
       border-radius: 5px;
     }
 
     .custom-button:hover,
     .custom-button:focus {
-      background-color: #555; /* Slightly lighter on hover/focus */
+      background-color: #555;
+      border-color: #555;
     }
 
-    .drag-and-drop-text {
-      text-align: center;
-      color: #555; /* Slightly darker than background */
-    }
-
-    /* Styles for the drag-and-drop area */
-    .custom-file-input.dragover {
-      border-color: #4CAF50; /* Green border color when dragging over */
-      background-color: #ecf9ec; /* Light green background color when dragging over */
+    .file-upload-container {
+      width: fit-content;
+      border: 2px solid #333;
+      border-radius: 5px;
+      border-style: dashed;
+      padding: 20px;
     }
   </style>
 
@@ -142,12 +136,14 @@
       <input style="width: 200px;" type="text" placeholder="Enter the name(default key) of the ComboBox" id="userInput"
         name="userInput" required="true" />
     </div>
-    <div id="fileInputContainer" class="custom-file-input">
-      <input type="file" id="fileInput"  class="input-hidden" accept=".csv"/>
-      <label for="fileInput" class="custom-button" id="fileInputText" style="margin: 5px;">
-        Chose a file
-      </label>
-      <p class="drag-and-drop-text">or drag and drop a file here</p>
+    <div class="file-upload-container">
+      <p>Select your CSV file here:</p>
+      <div id="fileInputContainer" class="custom-file-input">
+        <input type="file" id="fileInput" class="hidden" accept=".csv" />
+        <label for="fileInput" class="custom-button" id="fileInputText" style="margin: 5px;">
+          Chose a file
+        </label>
+      </div>
     </div>
 
     <div id="btnContainer">

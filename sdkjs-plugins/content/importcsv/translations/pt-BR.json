@@ -1,7 +1,7 @@
 {
     "Error": "Erro",
     "Enter the ComboBox name:": "Digite o nome da ComboBox:",
-    "Select or drop a file here": "Selecione ou solte um arquivo aqui",
+    "No file chosen": "Nenhum arquivo selecionado",
     "Add data from file": "Adicionar dados do arquivo",
     "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "Você não tem ComboBoxes no seu documento. Este plugin requer pelo menos um ComboBox para funcionar.",
     "Enter the name(default key) of the ComboBox" : "Digite o nome (chave padrão) do ComboBox",

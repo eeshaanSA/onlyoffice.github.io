@@ -65,7 +65,7 @@
       "Enter the ComboBox name:"
     );
     fileInputText.innerText = window.Asc.plugin.tr(
-      "Select or drop a file here"
+      "No file chosen"
     );
     addDataBtnText.innerText = window.Asc.plugin.tr("Add data from file");
 
@@ -182,7 +182,14 @@
     });
 
     function updateButtonText(fileName) {
-      document.querySelector('.custom-button').innerText = fileName;
+      if(fileName){
+
+        document.querySelector('.custom-button').innerText = fileName;
+      }else{
+        document.querySelector('.custom-button').innerText = generateText("No file chosen");
+
+      }
+
     }
 
   function processFile(file) {
