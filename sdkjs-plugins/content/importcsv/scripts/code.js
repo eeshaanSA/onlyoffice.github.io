@@ -103,18 +103,17 @@
           size: [392, 250],
         };
         break;
-      case textSelected: // I don't think we still need this logic
-        variation = {
-          url: location.href.replace(file, "textSelected.html"),
-          description: generateText("Error"),
-          isVisual: true,
-          isModal: true,
-          buttons: [],
-          EditorsSupport: ["word"],
-          size: [392, 250],
-        };
-        break;
-
+      // case textSelected: 
+      //   variation = {
+      //     url: location.href.replace(file, "textSelected.html"),
+      //     description: generateText("Error"),
+      //     isVisual: true,
+      //     isModal: true,
+      //     buttons: [],
+      //     EditorsSupport: ["word"],
+      //     size: [392, 250],
+      //   };
+      //   break;
       default:
         console.log(
           "invalid Case. Crash Prevented. Try again with valid inputs."
