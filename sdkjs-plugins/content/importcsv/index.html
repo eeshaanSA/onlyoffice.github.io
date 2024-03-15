@@ -89,7 +89,9 @@
       min-width: 100px;
       height: 30px;
     }
-
+    #addDataBtn[disabled]{
+      pointer-events: none;
+     }
     .custom-file-input {
       position: relative;
       display: inline-block;
@@ -118,8 +120,12 @@
       width: fit-content;
       border: 2px solid #333;
       border-radius: 5px;
-      border-style: dashed;
       padding: 20px;
+    }
+
+    .bordered{
+      border: 2px solid #333;
+      
     }
   </style>
 
@@ -132,8 +138,8 @@
 <body>
   <div class="container">
     <div class="userInputContainer">
-      <label for="userInput" id="userInputLabel">Enter the ComboBox name:</label>
-      <input style="width: 200px;" type="text" placeholder="Enter the name(default key) of the ComboBox" id="userInput"
+      <label for="userInput" id="userInputLabel" style="font-size: 15px;">Enter the ComboBox name:</label>
+      <input class="bordered" style="width: 200px;" type="text" placeholder="Enter the 'default value' of the ComboBox" id="userInput"
         name="userInput" required="true" />
     </div>
     <div class="file-upload-container">
@@ -141,7 +147,7 @@
       <div id="fileInputContainer" class="custom-file-input">
         <input type="file" id="fileInput" class="hidden" accept=".csv" />
         <label for="fileInput" class="custom-button" id="fileInputText" style="margin: 5px;">
-          Chose a file
+          No file chosen
         </label>
       </div>
     </div>
