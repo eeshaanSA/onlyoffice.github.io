@@ -16,7 +16,7 @@
  *
  */
 (function (window, undefined) {
-  window.Asc.plugin.init = function () { };
+  window.Asc.plugin.init = function () { };// move it below the global vars so this function is on the same level with the translate function//
   //translation generate function
 
   let modalWindow;
@@ -70,7 +70,9 @@
     addDataBtnText.innerText = window.Asc.plugin.tr("Add data from file");
 
     comboBoxName.placeholder = window.Asc.plugin.tr(
-      "Enter the name(default key) of the ComboBox"
+      "Enter the name(default key) of the ComboBox"// the parameter here is wrong. In your html the palceholder is differnt: "Enter the 'default value' of the ComboBox". And again this phrase does not fit into the input field //
+
+      // Also you have this paragraph in your html: <p>Select your CSV file here:</p> it is not being targeted earlier in your code and then translated inside this translate function hence it is always displayed in English//  
     );
   };
 
