@@ -16,33 +16,37 @@
  *
  */
 (function (window, undefined) {
-  window.Asc.plugin.init = function () { };// move it below the global vars so this function is on the same level with the translate function//
-  //translation generate function
-
+  
   let modalWindow;
-
+  
   const noMatch = "noMatch";
-
+  
   const noElement = "noElement";
-
+  
   const textSelected = "textSelected";
 
   let isSelected;
-
+  
   const userInputLabel = document.getElementById("userInputLabel");
-
+  
   const fileInputText = document.getElementById("fileInputText");
-
+  
   const fileInput = document.getElementById("fileInput");
-
+  
   const addDataBtnText = document.getElementById("addDataBtn");
-
+  
   const comboBoxName = document.getElementById("userInput");
-
+  
   const userFileInput = document.getElementById("fileInput");
-
+  
+  const customFileInpText = document.getElementById("file-upload-text");
+  
   let dataArray; 
-
+  
+  //plugin init function
+  window.Asc.plugin.init = function () { };
+  
+  //translation generate function
   function generateText(text) {
     let result = window.Asc.plugin.tr(text);
     return result;
@@ -70,10 +74,11 @@
     addDataBtnText.innerText = window.Asc.plugin.tr("Add data from file");
 
     comboBoxName.placeholder = window.Asc.plugin.tr(
-      "Enter the name(default key) of the ComboBox"// the parameter here is wrong. In your html the palceholder is differnt: "Enter the 'default value' of the ComboBox". And again this phrase does not fit into the input field //
-
-      // Also you have this paragraph in your html: <p>Select your CSV file here:</p> it is not being targeted earlier in your code and then translated inside this translate function hence it is always displayed in English//  
+      "Enter the 'default value' of the ComboBox" 
     );
+
+    customFileInpText.innerText = window.Asc.plugin.tr("Select your CSV file here:");
+
   };
 
   const displayModalBox = function (errorCase) {
