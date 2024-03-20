@@ -74,7 +74,7 @@
     addDataBtnText.innerText = window.Asc.plugin.tr("Add data from file");
 
     comboBoxName.placeholder = window.Asc.plugin.tr(
-      "Enter the 'default value' of the ComboBox" 
+      "Enter the 'default value'"
     );
 
     customFileInpText.innerText = window.Asc.plugin.tr("Select your CSV file here:");
