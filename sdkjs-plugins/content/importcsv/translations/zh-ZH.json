@@ -1,0 +1,10 @@
+{
+    "Error": "错误",
+    "Enter the ComboBox name:": "输入组合框名称：",
+    "No file chosen": "未选择文件",
+    "Add data from file": "从文件中添加数据",
+    "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "您的文档中没有组合框。该插件需要至少一个组合框才能使用。",
+    "Enter the 'default value'": "输入’默认值’",
+    "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key.": "文档中没有与您输入密钥匹配的组合框。请检查您的文档，或使用不同的密钥重试。",
+    "Select your CSV file here:": "在此选择您的 CSV 文件："
+}

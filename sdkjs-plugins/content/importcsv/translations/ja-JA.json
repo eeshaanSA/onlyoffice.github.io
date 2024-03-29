@@ -1,0 +1,10 @@
+{
+    "Error": "エラー",
+    "Enter the ComboBox name:": "コンボボックスの名前を入力してください：",
+    "No file chosen": "ファイルが選択されていません",
+    "Add data from file": "ファイルからのデータ",
+    "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "ドキュメントにコンボボックスがありません。このプラグインが動作するには、少なくとも1つのコンボボックスが必要です。",
+    "Enter the 'default value'": "「デフォルト値」を入力してください",
+    "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key.": "入力されたキーと一致するコンボボックスがドキュメントにありません。ドキュメントを確認するか、別のキーで再試行してください。",
+    "Select your CSV file here:": "ここでCSVファイルを選択してください："
+}
