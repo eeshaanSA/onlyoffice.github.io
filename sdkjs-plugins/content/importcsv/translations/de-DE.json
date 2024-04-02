@@ -4,7 +4,7 @@
     "No file chosen": "Keine Datei ausgewählt",
     "Add data from file": "Daten aus Datei hinzufügen",
     "You have no ComboBoxes in your document. This plugin requires at least one ComboBox to work.": "Ihr Dokument enthält keine ComboBoxen. Dieses Plugin benötigt mindestens eine ComboBox, um zu funktionieren.",
-    "Enter the 'default value'": "Geben Sie den „Standardwert“ ein.",
+    "Enter the 'default value'": "Geben Sie den Standardwert ein",
     "Please deselect elements or text before using this plugin for optimal performance." : "Bitte deaktivieren Sie Elemente oder Text, bevor Sie dieses Plugin verwenden, um eine optimale Leistung zu erzielen.",
     "None of the ComboBoxes in the document match the key you entered. Please check your document, or try again with a different key." : "Keine der ComboBoxen im Dokument stimmt mit dem von Ihnen eingegebenen Schlüssel überein. Bitte überprüfen Sie Ihr Dokument oder versuchen Sie es erneut mit einem anderen Schlüssel.",
     "Select your CSV file here:" : "Wählen Sie hier Ihre CSV-Datei aus:"
