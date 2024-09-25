@@ -1,0 +1,88 @@
+{
+    "name" : "Bilibili Player for ONLYOFFICE Editors",
+	"nameLocale": {
+		"ru": "",
+		"es": "",
+		"de": "",
+		"br": ""
+	},
+    "guid" : "asc.{FDSTF532-69ES-436C-RMDI-XSY4DF1R96ES}",
+
+    "variations" : [
+        {
+            "description" : "Bilibili player in ONLYOFFICE!!!",
+			"descriptionLocale": {
+				"ru": "",
+				"fr": "",
+				"es": "",
+				"de": "",
+				"br": ""
+			},
+            "url"         : "index.html",
+            "icons": [ "resources/light/icon.png", "resources/light/icon@2x.png" ],
+			"icons2": [
+				{
+					"style" : "light",
+					
+					"100%": {
+						"normal": "resources/light/icon.png"
+					},
+					"125%": {
+						"normal": "resources/light/icon@1.25x.png"
+					},
+					"150%": {
+						"normal": "resources/light/icon@1.5x.png"
+					},
+					"175%": {
+						"normal": "resources/light/icon@1.75x.png"
+					},
+					"200%": {
+						"normal": "resources/light/icon@2x.png"
+					}
+				},
+				{
+					"style" : "dark",
+					
+					"100%": {
+						"normal": "resources/dark/icon.png"
+					},
+					"125%": {
+						"normal": "resources/dark/icon@1.25x.png"
+					},
+					"150%": {
+						"normal": "resources/dark/icon@1.5x.png"
+					},
+					"175%": {
+						"normal": "resources/dark/icon@1.75x.png"
+					},
+					"200%": {
+						"normal": "resources/dark/icon@2x.png"
+					}
+				}
+			],
+            "isViewer"        : false,
+            "EditorsSupport"  : ["word" , "cell" ,"slide"],
+
+            "isVisual"        : true,
+            "isModal"         : false,
+            "isInsideMode"    : true,
+
+            "initDataType"    : "",
+            "initData"        : "",
+
+            "isUpdateOleOnResize" : false,
+			"store": {
+				"background": {
+					"light": "#F0F0F0",
+					"dark": "#333333"
+				},				
+				
+				"icons": {
+					"light": "resources/store/icons",
+					"dark": "resources/store/icons"
+				},
+				"categories": ["specAbilities", "work"]
+			}            
+        }
+    ]
+}
