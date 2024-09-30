@@ -1,25 +1,42 @@
-// const query = "anime";
-// async function search() {
-//   const apiUrl = `https://api.bilibili.com/x/web-interface/search/all?keyword=${query}`;
-//   const response = await fetch(apiUrl);
-//   const data = await response.json();
+/*
+ (c) Copyright Ascensio System SIA 2020
 
-//   console.log(data);
-// }
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
 
-// search();
+     http://www.apache.org/licenses/LICENSE-2.0
 
-// Function to make an API request with XMLHttpRequest
-function searchVideos(query) {
-  const xhr = new XMLHttpRequest();
-  const apiUrl = `https://api.bilibili.com/x/web-interface/search/all/v2?keyword=${query}`;
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
 
-  xhr.open("GET", apiUrl, true);
-  xhr.onload = function () {
-      const response = JSON.parse(xhr.responseText);
-      console.log(response);
-    
-  };
+ 
+function embedBilibiliVideo() {
+  // Get the video link from the input
+  const link = document.getElementById('bilibiliLink').value;
+  
+  // Validate the link
+  if (!link || !link.includes('bilibili.com/video')) {
+    alert('Please insert a valid Bilibili video link!');
+    return;
+  }
+
+  // Extract the BV or AV code from the URL
+  const regex = /\/video\/(BV\w+|av\d+)/;
+  const match = link.match(regex);
+  
+  if (match && match[1]) {
+    // Embed the video in the iframe using the Bilibili player URL
+    const videoID = match[1];
+    const embedUrl = `https://player.bilibili.com/player.html?bvid=${videoID}&page=1`;
+
+    // Set the iFrame src to the embed URL
+    document.getElementById('bilibiliPlayer').src = embedUrl;
+  } else {
+    alert('Could not extract video ID from the link. Please check the URL.');
+  }
 }
-
-searchVideos("anime");

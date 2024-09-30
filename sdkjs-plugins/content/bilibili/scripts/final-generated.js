@@ -26,7 +26,10 @@ function updatePlayer(videoId) {
 async function searchVideos(query) {
     try {
         const apiUrl = `https://api.bilibili.com/x/web-interface/search/all?keyword=${query}`;
+        console.log(apiUrl);
+        
         const response = await fetch(apiUrl); // Fetch data from Bilibili API
+        console.log(response);
         const data = await response.json(); // Convert response to JSON
 
         // Assuming the relevant video data is in `data.result.videos`
