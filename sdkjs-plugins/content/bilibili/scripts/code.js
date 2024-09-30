@@ -15,11 +15,38 @@
 (function (window, undefined) {
   window.Asc.plugin.init = function () {};
 
-  const searchInput = document.querySelector('.search-container input');
-const resultsContainer = document.querySelector('.results-container ul');
-const iframePlayer = document.querySelector('.player-container iframe');
+ 
+  document.getElementById("embed-btn").onclick = embedBilibiliVideo;
 
-// Function to render video list
+  function embedBilibiliVideo() {
+    // Get the video link from the input
+    const link = document.getElementById('bilibiliLink').value;
+    
+    // Validate the link
+    if (!link || !link.includes('bilibili.com/video')) {
+      alert('Please insert a valid Bilibili video link!');
+      return;
+    }
+  
+    const regex = /\/video\/(BV\w+|av\d+)/;
+    const match = link.match(regex);
+    
+    if (match && match[1]) {
+
+      const videoID = match[1];
+      const embedUrl = `https://player.bilibili.com/player.html?bvid=${videoID}&page=1`;
+  
+      // Set the iFrame src to the embed URL
+      document.getElementById('bilibiliPlayer').src = embedUrl;
+    } else {
+      alert('Could not extract video ID from the link. Please check the URL.');
+    }
+  }
+
+
+
+
+
 function renderVideos(videosToRender) {
   resultsContainer.innerHTML = ''; // Clear the previous results
   videosToRender.forEach(video => {
