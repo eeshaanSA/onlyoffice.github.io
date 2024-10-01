@@ -15,28 +15,28 @@
  */
 
  
-function embedBilibiliVideo() {
-  // Get the video link from the input
-  const link = document.getElementById('bilibiliLink').value;
+// function embedBilibiliVideo() {
+//   // Get the video link from the input
+//   const link = document.getElementById('bilibiliLink').value;
   
-  // Validate the link
-  if (!link || !link.includes('bilibili.com/video')) {
-    alert('Please insert a valid Bilibili video link!');
-    return;
-  }
+//   // Validate the link
+//   if (!link || !link.includes('bilibili.com/video')) {
+//     alert('Please insert a valid Bilibili video link!');
+//     return;
+//   }
 
-  // Extract the BV or AV code from the URL
-  const regex = /\/video\/(BV\w+|av\d+)/;
-  const match = link.match(regex);
+//   // Extract the BV or AV code from the URL
+//   const regex = /\/video\/(BV\w+|av\d+)/;
+//   const match = link.match(regex);
   
-  if (match && match[1]) {
-    // Embed the video in the iframe using the Bilibili player URL
-    const videoID = match[1];
-    const embedUrl = `https://player.bilibili.com/player.html?bvid=${videoID}&page=1`;
+//   if (match && match[1]) {
+//     // Embed the video in the iframe using the Bilibili player URL
+//     const videoID = match[1];
+//     const embedUrl = `https://player.bilibili.com/player.html?bvid=${videoID}&page=1`;
 
-    // Set the iFrame src to the embed URL
-    document.getElementById('bilibiliPlayer').src = embedUrl;
-  } else {
-    alert('Could not extract video ID from the link. Please check the URL.');
-  }
-}
+//     // Set the iFrame src to the embed URL
+//     document.getElementById('bilibiliPlayer').src = embedUrl;
+//   } else {
+//     alert('Could not extract video ID from the link. Please check the URL.');
+//   }
+// }

@@ -1,13 +1,27 @@
-<!-- Testing for normal browser -->
+<!--
+ (c) Copyright Ascensio System SIA 2020
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Bilibili Video Embedder</title>
+    <title>Plugin</title>
 
-   <style>
+    <style>
       * {
         margin: 0;
         padding: 0;
@@ -15,7 +29,7 @@
       }
 
       body {
-        font-family: 'Roboto', s ans-serif;
+        font-family: "Roboto", s ans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,7 +69,7 @@
       }
 
       .input-container input:focus {
-        border-color: #007BFF;
+        border-color: #007bff;
       }
 
       .input-container button {
@@ -89,18 +103,33 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       }
     </style>
+
+    <script
+      type="text/javascript"
+      src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins-ui.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="container">
-
       <div class="input-container">
         <input
           id="bilibiliLink"
           type="text"
           placeholder="Insert Bilibili video link here..."
         />
-        <button onclick="embedBilibiliVideo()">Embed Video</button>
+        <button id="embed-btn" onclick="embedBilibiliVideo()">
+          Embed Video
+        </button>
       </div>
 
       <div class="player-container">
@@ -112,33 +141,6 @@
         ></iframe>
       </div>
     </div>
-
-    <script>
-      function embedBilibiliVideo() {
-        // Get the video link from the input
-        const link = document.getElementById('bilibiliLink').value;
-        
-        // Validate the link
-        if (!link || !link.includes('bilibili.com/video')) {
-          alert('Please insert a valid Bilibili video link!');
-          return;
-        }
-
-        // Extract the BV or AV code from the URL
-        const regex = /\/video\/(BV\w+|av\d+)/;
-        const match = link.match(regex);
-        
-        if (match && match[1]) {
-          // Embed the video in the iframe using the Bilibili player URL
-          const videoID = match[1];
-          const embedUrl = `https://player.bilibili.com/player.html?bvid=${videoID}&page=1`;
-
-          // Set the iFrame src to the embed URL
-          document.getElementById('bilibiliPlayer').src = embedUrl;
-        } else {
-          alert('Could not extract video ID from the link. Please check the URL.');
-        }
-      }
-    </script>
-  </body> -->
+  </body>
+  <script type="text/javascript" src="scripts/code.js"></script>
 </html>
