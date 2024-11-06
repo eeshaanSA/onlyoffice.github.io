@@ -1,0 +1,7 @@
+{
+  "Embed Video": "ビデオを埋め込む",
+  "Insert Bilibili video link here...": "ここに Bilibili ビデオのリンクを挿入します...",
+  "Please increase the window width to view the content.": "コンテンツを表示するにはウィンドウの幅を広げてください。",
+  "The link you have entered is not a valid Bilibili link. Try again with the correct link.": "入力したリンクは有効な Bilibili リンクではありません。正しいリンクを使用して再試行してください。",
+  "Could not extract video ID from the link. Please check the URL and try again.": "リンクからビデオ ID を抽出できませんでした。 URLを確認して再度お試しください。"
+}

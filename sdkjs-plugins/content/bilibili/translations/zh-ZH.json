@@ -1,0 +1,7 @@
+{
+  "Embed Video": "嵌入视频",
+  "Insert Bilibili video link here...": "在此插入 Bilibili 视频链接...",
+  "Please increase the window width to view the content.": "请增加窗口宽度以查看内容。",
+  "The link you have entered is not a valid Bilibili link. Try again with the correct link.": "您输入的链接不是有效的 Bilibili 链接。使用正确的链接重试。",
+  "Could not extract video ID from the link. Please check the URL and try again.": "无法从链接中提取视频 ID。请检查 URL 并重试。"
+}
