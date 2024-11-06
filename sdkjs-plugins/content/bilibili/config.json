@@ -1,0 +1,89 @@
+{
+    "name" : "Bilibili",
+	"nameLocale": {
+		"ru": "Bilibili",
+		"es": "Bilibili",
+		"de": "Bilibili",
+		"br": "Bilibili",
+		"zh": "哔哩哔哩"
+	},
+    "guid" : "asc.{FDSTF532-69ES-436C-RMDI-XSY4DF1R96ES}",
+
+    "variations" : [
+        {
+            "description" : "A simple side-panel plugin that allows you to embed Bilibili videos in ONLYOFFICE Editors and edit your documents simultaneously.",
+			"descriptionLocale": {
+				"ru": "Простой плагин боковой панели, который позволяет встраивать видео Bilibili в редакторы ONLYOFFICE и одновременно редактировать документы.",
+				"fr": "Un simple plugin sur le panneau latéral qui vous permet d'intégrer des vidéos Bilibili dans les éditeurs ONLYOFFICE et de modifier vos documents simultanément.",
+				"es": "Un complemento simple del panel lateral que le permite incrustar videos de Bilibili en los editores de ONLYOFFICE y editar sus documentos simultáneamente.",
+				"de": "Ein einfaches Seitenpanel-Plugin, mit dem Sie Bilibili-Videos in ONLYOFFICE Editors einbetten und Ihre Dokumente gleichzeitig bearbeiten können.",
+				"br": "一个简单的侧面板插件，可让您将 哔哩哔哩 视频嵌入 ONLYOFFICE 编辑器并同时编辑文档。"
+			},
+            "url"         : "index.html",
+            "icons": [ "resources/light/icon.svg", "resources/light/icon.svg" ],
+			"icons2": [
+				{
+					"style" : "light",
+					
+					"100%": {
+						"normal": "resources/light/icon.svg"
+					},
+					"125%": {
+						"normal": "resources/light/icon.svg"
+					},
+					"150%": {
+						"normal": "resources/light/icon.svg"
+					},
+					"175%": {
+						"normal": "resources/light/icon.svg"
+					},
+					"200%": {
+						"normal": "resources/light/icon.svg"
+					}
+				},
+				{
+					"style" : "dark",
+					
+					"100%": {
+						"normal": "resources/dark/icon.svg"
+					},
+					"125%": {
+						"normal": "resources/dark/icon.svg"
+					},
+					"150%": {
+						"normal": "resources/dark/icon.svg"
+					},
+					"175%": {
+						"normal": "resources/dark/icon.svg"
+					},
+					"200%": {
+						"normal": "resources/dark/icon.svg"
+					}
+				}
+			],
+            "isViewer"        : false,
+            "EditorsSupport"  : ["word", "cell", "slide"],
+
+            "isVisual"        : true,
+            "isModal"         : false,
+            "isInsideMode"    : true,
+
+            "initDataType"    : "",
+            "initData"        : "",
+
+            "isUpdateOleOnResize" : false,
+			"store": {
+				"background": {
+					"light": "#F0F0F0",
+					"dark": "#333333"
+				},				
+				
+				"icons": {
+					"light": "resources/store/icons",
+					"dark": "resources/store/icons"
+				},
+				"categories": ["specAbilities", "work"]
+			}            
+        }
+    ]
+}
