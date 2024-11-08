@@ -1,89 +1,105 @@
 {
-    "name" : "Bilibili",
-	"nameLocale": {
-		"ru": "Bilibili",
-		"es": "Bilibili",
-		"de": "Bilibili",
-		"br": "Bilibili",
-		"zh": "哔哩哔哩"
-	},
-    "guid" : "asc.{FDSTF532-69ES-436C-RMDI-XSY4DF1R96ES}",
-
-    "variations" : [
+  "name": "Video Embedder",
+  "nameLocale": {
+    "ru": "Video Embedder",
+    "es": "Video Embedder",
+    "de": "Video Embedder",
+    "br": "Video Embedder",
+    "zh": "视频嵌入器",
+    "si": "වීඩියෝ එම්බෙඩරය"
+  },
+  "guid": "asc.{FDSTF532-69ES-436C-RMDI-XSY4DF1R96ES}",
+  "variations": [
+    {
+      "description": "Effortlessly embed videos from various streaming platforms into the document",
+      "descriptionLocale": {
+        "ru": "Простой плагин боковой панели, который позволяет встраивать видео из различных стриминговых платформ в документ.",
+        "fr": "Un simple plugin sur le panneau latéral qui vous permet d'intégrer des vidéos de différentes plateformes de streaming dans le document.",
+        "es": "Un complemento simple del panel lateral que le permite incrustar videos de varias plataformas de streaming en el documento.",
+        "de": "Ein einfaches Seitenpanel-Plugin, mit dem Sie Videos aus verschiedenen Streaming-Plattformen in das Dokument einbetten können.",
+        "br": "Um simples plugin de painel lateral que permite incorporar vídeos de várias plataformas de streaming no documento.",
+        "zh": "一个简单的侧面板插件，可以将来自各种流媒体平台的视频嵌入文档中。",
+        "si": "විවිධ ස්ටීම් කළමනාකරණ වේදිකාවන්ගෙන් වීඩියෝවක් ලේඛනයේ ඇතුළත් කිරීම පහසුවෙන් සිදුකරයි."
+      },
+      "url": "index-test.html",
+      "icons": ["resources/light/icon.svg", "resources/light/icon.svg"],
+      "icons2": [
         {
-            "description" : "A simple side-panel plugin that allows you to embed Bilibili videos in ONLYOFFICE Editors and edit your documents simultaneously.",
-			"descriptionLocale": {
-				"ru": "Простой плагин боковой панели, который позволяет встраивать видео Bilibili в редакторы ONLYOFFICE и одновременно редактировать документы.",
-				"fr": "Un simple plugin sur le panneau latéral qui vous permet d'intégrer des vidéos Bilibili dans les éditeurs ONLYOFFICE et de modifier vos documents simultanément.",
-				"es": "Un complemento simple del panel lateral que le permite incrustar videos de Bilibili en los editores de ONLYOFFICE y editar sus documentos simultáneamente.",
-				"de": "Ein einfaches Seitenpanel-Plugin, mit dem Sie Bilibili-Videos in ONLYOFFICE Editors einbetten und Ihre Dokumente gleichzeitig bearbeiten können.",
-				"br": "一个简单的侧面板插件，可让您将 哔哩哔哩 视频嵌入 ONLYOFFICE 编辑器并同时编辑文档。"
-			},
-            "url"         : "index.html",
-            "icons": [ "resources/light/icon.svg", "resources/light/icon.svg" ],
-			"icons2": [
-				{
-					"style" : "light",
-					
-					"100%": {
-						"normal": "resources/light/icon.svg"
-					},
-					"125%": {
-						"normal": "resources/light/icon.svg"
-					},
-					"150%": {
-						"normal": "resources/light/icon.svg"
-					},
-					"175%": {
-						"normal": "resources/light/icon.svg"
-					},
-					"200%": {
-						"normal": "resources/light/icon.svg"
-					}
-				},
-				{
-					"style" : "dark",
-					
-					"100%": {
-						"normal": "resources/dark/icon.svg"
-					},
-					"125%": {
-						"normal": "resources/dark/icon.svg"
-					},
-					"150%": {
-						"normal": "resources/dark/icon.svg"
-					},
-					"175%": {
-						"normal": "resources/dark/icon.svg"
-					},
-					"200%": {
-						"normal": "resources/dark/icon.svg"
-					}
-				}
-			],
-            "isViewer"        : false,
-            "EditorsSupport"  : ["word", "cell", "slide"],
-
-            "isVisual"        : true,
-            "isModal"         : false,
-            "isInsideMode"    : true,
-
-            "initDataType"    : "",
-            "initData"        : "",
-
-            "isUpdateOleOnResize" : false,
-			"store": {
-				"background": {
-					"light": "#F0F0F0",
-					"dark": "#333333"
-				},				
-				
-				"icons": {
-					"light": "resources/store/icons",
-					"dark": "resources/store/icons"
-				},
-				"categories": ["specAbilities", "work"]
-			}            
+          "style": "light",
+          "100%": {
+            "normal": "resources/light/icon.svg"
+          },
+          "125%": {
+            "normal": "resources/light/icon.svg"
+          },
+          "150%": {
+            "normal": "resources/light/icon.svg"
+          },
+          "175%": {
+            "normal": "resources/light/icon.svg"
+          },
+          "200%": {
+            "normal": "resources/light/icon.svg"
+          }
+        },
+        {
+          "style": "dark",
+          "100%": {
+            "normal": "resources/dark/icon.svg"
+          },
+          "125%": {
+            "normal": "resources/dark/icon.svg"
+          },
+          "150%": {
+            "normal": "resources/dark/icon.svg"
+          },
+          "175%": {
+            "normal": "resources/dark/icon.svg"
+          },
+          "200%": {
+            "normal": "resources/dark/icon.svg"
+          }
         }
-    ]
+      ],
+      "isViewer": true,
+      "isDisplayedInViewer": false,
+      "EditorsSupport": ["word", "cell", "slide"],
+      "isVisual": true,
+      "isModal": true,
+      "isInsideMode": false,
+      "initDataType": "ole",
+      "isUpdateOleOnResize": false,
+      "buttons": [
+        {
+          "text": "OK",
+          "primary": true,
+          "isViewer": false
+        },
+        {
+          "text": "Cancel",
+          "primary": false,
+          "isViewer": true,
+          "textLocale": {
+            "ru": "Отмена",
+            "fr": "Annuler",
+            "es": "Cancelar",
+            "de": "Abbrechen",
+            "si": "අවලංගු"
+          }
+        }
+      ],
+      "size": [350, 90],
+      "store": {
+        "background": {
+          "light": "#F0F0F0",
+          "dark": "#333333"
+        },
+        "icons": {
+          "light": "resources/store/icons",
+          "dark": "resources/store/icons"
+        },
+        "categories": ["specAbilities", "work"]
+      }
+    }
+  ]
 }
