@@ -5,13 +5,14 @@
     var isWindowPlayer = false;
 
     function validateVideoUrl(url) {
-      // Updated to include patterns for all supported platforms
       var patterns = [
         /^(?:https?:\/\/)?(?:www\.)?(bilibili\.com\/video\/)([^#\&\?]+)/,
         /^(?:https?:\/\/)?(?:v\.)?(youku\.com\/v_show\/id_)([^#\&\?]+)/,
         /^(?:https?:\/\/)?(?:v\.|m\.)?(qq\.com\/x\/cover\/\w+\/)([^#\&\?]+)/,
+        /^(?:https?:\/\/)?(?:v\.|www\.)?(qq\.com\/x\/page\/)([^#\&\?]+)/, // New pattern for v.qq.com
         /^(?:https?:\/\/)?(?:www\.)?(ixigua\.com\/)([^#\&\?]+)/,
         /^(?:https?:\/\/)?(?:www\.)?(iqiyi\.com\/v_)([^#\&\?]+)/,
+        /^(?:https?:\/\/)?(?:www\.)?(iqiyi\.com\/a_)([^#\&\?]+)/, // New pattern for iqiyi.com/a_
       ];
       for (var i = 0; i < patterns.length; i++) {
         if (url.match(patterns[i])) return true;
@@ -22,15 +23,23 @@
     function getVideoId(url) {
       // Extract video IDs for all platforms
       if (url.includes("bilibili.com")) {
-        return url.split("/video/")[1].split("?")[0];
+        return url.split("/video/")[1].split("/")[0];
       } else if (url.includes("youku.com")) {
         return url.split("id_")[1].split(".")[0];
       } else if (url.includes("qq.com")) {
-        return url.split("/cover/")[1].split("/")[1].split(".")[0];
+        if (url.includes("/x/page/")) {
+          return url.split("/x/page/")[1].split(".")[0];
+        } else {
+          return url.split("/cover/")[1].split("/")[1].split(".")[0];
+        }
       } else if (url.includes("ixigua.com")) {
         return url.split(".com/")[1].split("?")[0];
       } else if (url.includes("iqiyi.com")) {
-        return url.split("/v_")[1].split(".")[0];
+        if (url.includes("/a_")) {
+          return url.split("/a_")[1].split(".")[0];
+        } else {
+          return url.split("/v_")[1].split(".")[0];
+        }
       }
       return null;
     }
@@ -78,7 +87,7 @@
         url = _url;
 
         // Get video ID and create embed URL
-        var videoId = getVideoId(url); // Highlighted change: Ensure video ID is fetched
+        var videoId = getVideoId(url);
         if (videoId) {
           if (url.includes("bilibili.com")) {
             embedUrl = `<iframe src="https://player.bilibili.com/player.html?bvid=${videoId}" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>`;
@@ -128,7 +137,7 @@
           heightPix: (_info.mmToPx * _info.height) >> 0,
           width: _info.width ? _info.width : 100,
           height: _info.height ? _info.height : 70,
-          imgSrc: "path/to/local/static/image.jpg", // static image
+          imgSrc: "", // static image
           data: url,
           objectId: _info.objectId,
           resize: _info.resize,
@@ -144,9 +153,11 @@
 
     window.Asc.plugin.onTranslate = function () {
       var label = document.getElementById("td_labelUrl");
+      var previewBtn = document.getElementById("textbox_button");
       if (label) label.innerHTML = window.Asc.plugin.tr("Paste video URL");
+      if (previewBtn) previewBtn.innerHTML = window.Asc.plugin.tr("Preview");
     };
   } catch (error) {
-    console.log("Some problem:", error); // Highlighted change: Detailed error logging
+    console.log("Some problem:", error);
   }
 })(window, undefined);

@@ -21,7 +21,7 @@
         "zh": "一个简单的侧面板插件，可以将来自各种流媒体平台的视频嵌入文档中。",
         "si": "විවිධ ස්ටීම් කළමනාකරණ වේදිකාවන්ගෙන් වීඩියෝවක් ලේඛනයේ ඇතුළත් කිරීම පහසුවෙන් සිදුකරයි."
       },
-      "url": "index-test.html",
+      "url": "index.html",
       "icons": ["resources/light/icon.svg", "resources/light/icon.svg"],
       "icons2": [
         {

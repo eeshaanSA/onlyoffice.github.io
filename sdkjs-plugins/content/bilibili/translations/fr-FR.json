@@ -1,7 +1,4 @@
 {
-  "Embed Video": "Intégrer la vidéo",
-  "Insert Bilibili video link here...": "Insérez le lien vidéo Bilibili ici...",
-  "Please increase the window width to view the content.": "Veuillez augmenter la largeur de la fenêtre pour afficher le contenu.",
-  "The link you have entered is not a valid Bilibili link. Try again with the correct link.": "Le lien que vous avez saisi n'est pas un lien Bilibili valide. Réessayez avec le bon lien.",
-  "Could not extract video ID from the link. Please check the URL and try again.": "Impossible d'extraire l'ID vidéo du lien. Veuillez vérifier l'URL et réessayer."
+  "Paste video URL": "Collez l'URL de la vidéo",
+  "Preview": "Aperçu"
 }

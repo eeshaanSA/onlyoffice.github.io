@@ -12,16 +12,13 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- -->
+-->
 
 <!DOCTYPE html>
-<html lang="en">
+<html style="height: 100%">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Plugin</title>
-
-    <link rel="stylesheet" href="styles/style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Video Embedder</title>
 
     <script
       type="text/javascript"
@@ -35,44 +32,117 @@
       rel="stylesheet"
       href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="scripts/videoEmbedder.js"></script>
+
+    <style>
+      .input_error {
+        display: none;
+        float: left;
+        position: relative;
+      }
+
+      .input_error:before {
+        content: "";
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        width: 16px;
+        height: 16px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAACvSURBVDhPrZNRDoIwEER7COA6HgJPpAnHM4oXQdFE/VDfNrsfpQvGhkneT2dmky40rK77pq6ggx4eyhF2UGnMF4EWBvjMcIFW46nEgLcGl5BMOoSDGmR6EjZNz0GyjdbjALlfFjR5HnRajwNkSVnI5HnQaz0OkE1nIZPnwVPrxQNGrc9f4Qcnra+zxAbKP6OIg/IfyYSxhasGPcTzyyYC9pjO8IIbHGAPy4/pf4XwBSVejZ5wzd0zAAAAAElFTkSuQmCC);
+      }
+    </style>
   </head>
+  <body
+    style="
+      user-select: none;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+    "
+  >
+    <div
+      id="td_labelUrl"
+      class="defaultlable"
+      style="
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        right: 15px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+      "
+    >
+      Paste Video URL
+    </div>
 
-  <body>
-    <div class="container">
-      <div class="input-container">
+    <div
+      style="
+        position: absolute;
+        left: 15px;
+        top: 35px;
+        right: 15px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          right: 40px;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        "
+      >
         <input
-          id="bilibiliLink"
           type="text"
-          placeholder="Insert Bilibili video link here..."
+          class="form-control"
+          style="left: 0px; top: 0px; width: 90%"
+          id="textbox_url"
+          autofocus
+          autocomplete="off"
         />
-        <button
-          id="embed-btn"
-          class="primary"
-          onclick="embedBilibiliVideo()"
-          disabled
-        >
-          Embed Video
-        </button>
-        <div class="resize-message">
-          <p id="short-width-message">
-            Please increase the window width to view the content.
-          </p>
-        </div>
+        <div
+          id="input_error_id"
+          class="input_error"
+          style="
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 0px;
+            height: 16px;
+            display: none;
+          "
+        ></div>
       </div>
+      <button
+        class="btn-text-default"
+        style="position: absolute; top: 0px; right: 0px; width: 60px"
+        id="textbox_button"
+      >
+        Preview
+      </button>
+    </div>
 
-      <div class="player-container">
-        <iframe
-          id="bilibiliPlayer"
-          src=""
-          frameborder="no"
-          allowfullscreen="true"
-        ></iframe>
-      </div>
-    </div>
-    <div class="resize-message">
-      Please increase the window width to view the content.
-    </div>
+    <div
+      id="id_player"
+      style="
+        position: absolute;
+        left: 15px;
+        top: 75px;
+        right: 15px;
+        bottom: 15px;
+        margin: 0;
+        padding: 0;
+      "
+    ></div>
   </body>
-  <script type="text/javascript" src="scripts/code.js"></script>
 </html>
