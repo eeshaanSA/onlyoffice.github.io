@@ -95,8 +95,8 @@
           "dark": "#333333"
         },
         "icons": {
-          "light": "resources/store/icons",
-          "dark": "resources/store/icons"
+          "light": "resources/store/icons/light",
+          "dark": "resources/store/icons/dark"
         },
         "categories": ["specAbilities", "work"]
       }
