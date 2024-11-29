@@ -20,6 +20,8 @@ This plugin allows users to embed videos from various platforms directly into th
 - **Supported Links:**  
   - Cover videos: `https://v.qq.com/x/cover/{coverId}/{videoId}.html`  
     Example: `https://v.qq.com/x/cover/mzc00200txzcq9a/c0042j0sf2b.html`
+  - Cover videos Type 2 (Works, but not recommended to use.): `https://v.qq.com/x/cover/{videoId}.html`
+    Example: `https://v.qq.com/x/cover/c0042j0sf2b`
   - Page videos: `https://v.qq.com/x/page/{videoId}.html`  
     Example: `https://v.qq.com/x/page/c0042j0sf2b.html`
 
