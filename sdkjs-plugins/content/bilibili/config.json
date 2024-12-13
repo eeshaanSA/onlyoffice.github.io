@@ -13,15 +13,15 @@
   "offered": "Eeshaan Sawant",
   "variations": [
     {
-      "description": "Effortlessly embed videos from various streaming platforms into the document",
+      "description": "Effortlessly embed videos from various streaming platforms into the document. These are the platforms that are currently supported : Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI. ",
       "descriptionLocale": {
-        "ru": "Простой плагин боковой панели, который позволяет встраивать видео из различных стриминговых платформ в документ.",
-        "fr": "Un simple plugin sur le panneau latéral qui vous permet d'intégrer des vidéos de différentes plateformes de streaming dans le document.",
-        "es": "Un complemento simple del panel lateral que le permite incrustar videos de varias plataformas de streaming en el documento.",
-        "de": "Ein einfaches Seitenpanel-Plugin, mit dem Sie Videos aus verschiedenen Streaming-Plattformen in das Dokument einbetten können.",
-        "br": "Um simples plugin de painel lateral que permite incorporar vídeos de várias plataformas de streaming no documento.",
-        "zh": "一个简单的侧面板插件，可以将来自各种流媒体平台的视频嵌入文档中。",
-        "si": "විවිධ ස්ටීම් කළමනාකරණ වේදිකාවන්ගෙන් වීඩියෝවක් ලේඛනයේ ඇතුළත් කිරීම පහසුවෙන් සිදුකරයි."
+        "ru": "Легко встраивайте видео из различных стриминговых платформ в документ. В настоящее время поддерживаются следующие платформы: Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI.",
+        "fr": "Intégrez facilement des vidéos de différentes plateformes de streaming dans le document. Les plateformes actuellement prises en charge sont : Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI.",
+        "es": "Incruste fácilmente videos de varias plataformas de streaming en el documento. Las plataformas actualmente compatibles son: Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI.",
+        "de": "Binden Sie Videos von verschiedenen Streaming-Plattformen mühelos in das Dokument ein. Derzeit unterstützte Plattformen: Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI.",
+        "br": "Incorpore vídeos de diversas plataformas de streaming no documento com facilidade. As plataformas atualmente suportadas são: Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI.",
+        "zh": "轻松将来自各种流媒体平台的视频嵌入文档。目前支持的平台包括:  哔哩哔哩、QQ (腾讯视频播放器)、西瓜视频、优酷、爱奇艺。",
+        "si": "වෙනත් ස්ට්‍රීම් කරන වේදිකාවලින් වීඩියෝ ලේඛනයට පහසුවෙන් ඇතුළත් කරන්න. මේ වන විට සහාය දක්වන වේදිකාවන්: Bilibili, QQ (Tencent Video Player), Ixigua, Youku, IQIYI."
       },
       "url": "index.html",
       "icons": ["resources/light/icon.svg", "resources/light/icon.svg"],
