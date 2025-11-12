@@ -36,7 +36,7 @@
 	{ "name": "bilibili", "discussion": "" },
 	{ "name": "templates", "discussion": "" },
 	{ "name": "symboltable", "discussion": "" },
-	{ "name": "onlypass", "discussion": "" },
-	{ "name": "onlychain", "discussion": "" }
+	{ "name": "settings", "discussion": "" },
+	{ "name": "searchAndReplaceOnStart", "discussion": "" }
 
 ]
