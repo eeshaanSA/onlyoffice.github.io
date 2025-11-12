@@ -32,7 +32,9 @@
 	{ "name": "insertQR", "discussion": "" },
 	{ "name": "cvbuilder", "discussion": "" },
 	{ "name": "bilibili", "discussion": "" },
-	{ "name": "contentcontrol", "discussion": "" },
-	{ "name": "movecursor", "discussion": "" }
+	{ "name": "templates", "discussion": "" },
+	{ "name": "symboltable", "discussion": "" },
+	{ "name": "onlypass", "discussion": "" },
+	{ "name": "onlychain", "discussion": "" }
 
 ]
