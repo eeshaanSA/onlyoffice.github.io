@@ -37,6 +37,12 @@
 	{ "name": "templates", "discussion": "" },
 	{ "name": "symboltable", "discussion": "" },
 	{ "name": "settings", "discussion": "" },
-	{ "name": "searchAndReplaceOnStart", "discussion": "" }
+	{ "name": "searchAndReplaceOnStart", "discussion": "" },
+	{ "name": "clippy", "discussion": "" },
+	{ "name": "helloworld", "discussion": "" },
+	{ "name": "invoices", "discussion": "" },
+	{ "name": "example_search_and_change_text_background_color", "discussion": "" }
+	
+
 
 ]
