@@ -41,8 +41,12 @@
 	{ "name": "clippy", "discussion": "" },
 	{ "name": "helloworld", "discussion": "" },
 	{ "name": "invoices", "discussion": "" },
-	{ "name": "example_search_and_change_text_background_color", "discussion": "" }
-	
-
-
+	{ "name": "example_search_and_change_text_background_color", "discussion": "" },
+	{ "name": "example_customfields_add", "discussion": "" },
+	{ "name": "example_customfields_load", "discussion": "" },
+	{ "name": "example_extended_comments", "discussion": "" },
+	{ "name": "example_search_replace", "discussion": "" },
+	{ "name": "example_work_with_content_controls_content", "discussion": "" },
+	{ "name": "example_work_with_content_controls_navigation", "discussion": "" },
+	{ "name": "example_add_comment_in_cell", "discussion": "" }
 ]
