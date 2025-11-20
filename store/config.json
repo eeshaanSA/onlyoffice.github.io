@@ -48,5 +48,6 @@
 	{ "name": "example_search_replace", "discussion": "" },
 	{ "name": "example_work_with_content_controls_content", "discussion": "" },
 	{ "name": "example_work_with_content_controls_navigation", "discussion": "" },
-	{ "name": "example_add_comment_in_cell", "discussion": "" }
+	{ "name": "example_add_comment_in_cell", "discussion": "" },
+	{ "name": "context-menu-and-events", "discussion": "" }
 ]
